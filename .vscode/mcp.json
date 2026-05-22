@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "hangman": {
+            "type": "stdio",
+            "command": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "args": [
+                "-u",
+                "-m",
+                "hangman_server"
+            ],
+            "env": {
+                "PYTHONUNBUFFERED": "1"
+            }
+        }
+    }
+}

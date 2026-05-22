@@ -1,0 +1,30 @@
+[project]
+name = "hangman-server"
+version = "0.1.0"
+description = "MCP server exposing classic Hangman with inline VS Code rendering and sampling-powered hints"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Jeff Rose" }]
+requires-python = ">=3.11"
+dependencies = [
+    "mcp[cli]>=1.27.0",
+    "mcp-ui-server",
+    "pydantic>=2.7",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hangman_server"]
+
+[tool.uv]
+package = true
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "MCP server exposing classic Hangman with inline VS Code rendering and sampling-powered hints"
 readme = "README.md"
 license = { file = "LICENSE" }
-authors = [{ name = "Jeff Rose" }]
+authors = [{ name = "Jeff Rosen" }]
 requires-python = ">=3.11"
 dependencies = [
     "mcp[cli]>=1.27.0",
